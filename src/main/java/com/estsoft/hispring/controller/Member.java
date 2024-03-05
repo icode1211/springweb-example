@@ -1,10 +1,14 @@
 package com.estsoft.hispring.controller;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Member {
     // insert into member (name) values ("이름");   id : 1, name: 이름
     // insert into member (name) values ("이름2");  id : 2, name: 이름2

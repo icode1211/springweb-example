@@ -29,4 +29,13 @@ public class BookRepository {
         }
         return bookList;
     }
+
+    public BookDTO findBookById(String isbn) {
+//        return bookMap.get(isbn);
+        return bookMap.getOrDefault(isbn, new BookDTO());
+    }
+
+    public void saveBook(BookDTO book) {
+        bookMap.put(book.getId(), book);
+    }
 }
